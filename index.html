@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Collapsible sidebar using Bootstrap 4</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+<!--chart.js script cdn-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+
+  <body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <aside>
+        <nav id="sidebar"  style="height: 1000px;box-shadow: 50px #050505!important;"class="row-offcanvas-left h-100">
+            <div class=" sidebar-header">
+                
+              
+                <img style="height: 50px;" src="images/foodtech-logo-216x62.png" alt="logo">
+              
+            </div>
+
+            <ul class="list-unstyled components text-dark">
+                
+                <li class="" style="color: #ff8306;">
+                  
+
+                    <a href="#homeSubmenu" data-toggle="collapse"  aria-expanded="false" class="dropdown-toggle"> <i class="mr-2 ml-2 fas fa-columns"></i>Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                  
+                  <a href="#menuSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> <i class="mr-2 ml-2 fas fa-columns"></i>Menus</a>
+                  <ul class="collapse list-unstyled" id="menuSubmenu">
+                      <li>
+                          <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                          <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                          <a href="#">Home 3</a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li>
+                <a href="#"><i class="mr-2 ml-2 fas fa-columns"></i>Orders</a>
+            </li>
+
+            <li>
+              <a href="#"><i class="mr-2 ml-2 fas fa-columns"></i>Restaurant list</a>
+          </li>
+
+               
+          <li class="">
+                  
+
+            <a href="#voiceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> <i class="mr-2 ml-2 fas fa-columns"></i>Invoice</a>
+            <ul class="collapse list-unstyled" id="voiceSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="">
+          
+          <a href="#custSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> <i class="mr-2 ml-2 fas fa-columns"></i>Customer</a>
+          <ul class="collapse list-unstyled" id="custSubmenu">
+              <li>
+                  <a href="#">Home 1</a>
+              </li>
+              <li>
+                  <a href="#">Home 2</a>
+              </li>
+              <li>
+                  <a href="#">Home 3</a>
+              </li>
+          </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class="mr-2 ml-2 fas fa-columns"></i>Sales</a>
+    </li>
+
+    <li>
+      <a href="#"><i class="mr-2 ml-2 fas fa-columns"></i>Widgets</a>
+  </li>
+
+
+                <li>
+                  <a href="#basicSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="mr-2 ml-2 fas fa-columns"></i>Basic UI elements</a>
+                  <ul class="collapse list-unstyled" id="basicSubmenu">
+                      <li>
+                          <a href="#">Page 1</a>
+                      </li>
+                      <li>
+                          <a href="#">Page 2</a>
+                      </li>
+                      <li>
+                          <a href="#">Page 3</a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li>
+                <a href="#advSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="mr-2 ml-2 fas fa-columns"></i>Advanced UI elements</a>
+                <ul class="collapse list-unstyled" id="advSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+              <a href="#"><i class="mr-2 ml-2 fas fa-columns"></i>Animations</a>
+          </li>
+          <li>
+              <a href="#"><i class="mr-2 ml-2 fas fa-columns"></i>Form Elements</a>
+          </li>
+
+            <li>
+              <a href="#chartSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="mr-2 ml-2 fas fa-columns"></i>Charts</a>
+              <ul class="collapse list-unstyled" id="chartSubmenu">
+                  <li>
+                      <a href="#">Page 1</a>
+                  </li>
+                  <li>
+                      <a href="#">Page 2</a>
+                  </li>
+                  <li>
+                      <a href="#">Page 3</a>
+                  </li>
+              </ul>
+          </li>
+
+          <li>
+            <a href="#tableSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="mr-2 ml-2 fas fa-columns"></i>Tables</a>
+            <ul class="collapse list-unstyled" id="tableSubmenu">
+                <li>
+                    <a href="#">Page 1</a>
+                </li>
+                <li>
+                    <a href="#">Page 2</a>
+                </li>
+                <li>
+                    <a href="#">Page 3</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+          <a href="#"><i class="mr-2 ml-2 fas fa-columns"></i>Popus</a>
+      </li>
+      <li>
+          <a href="#"><i class="mr-2 ml-2 fas fa-columns"></i>Icons</a>
+      </li>
+
+      <li>
+        <a href="#mapsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="mr-2 ml-2 fas fa-columns"></i>Maps</a>
+        <ul class="collapse list-unstyled" id="mapsSubmenu">
+            <li>
+                <a href="#">Page 1</a>
+            </li>
+            <li>
+                <a href="#">Page 2</a>
+            </li>
+            <li>
+                <a href="#">Page 3</a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+      <a href="#boneSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="mr-2 ml-2 fas fa-columns"></i>Bones Pages</a>
+      <ul class="collapse list-unstyled" id="boneSubmenu">
+          <li>
+              <a href="#">Page 1</a>
+          </li>
+          <li>
+              <a href="#">Page 2</a>
+          </li>
+          <li>
+              <a href="#">Page 3</a>
+          </li>
+      </ul>
+  </li>
+
+  <li>
+    <a href="#">Pages</a>
+</li>
+<li>
+    <a href="#">Apps</a>
+</li>
+
+<li>
+  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="mr-2 ml-2 fas fa-columns"></i>Pages</a>
+  <ul class="collapse list-unstyled" id="pageSubmenu">
+      <li>
+          <a href="#">Page 1</a>
+      </li>
+      <li>
+          <a href="#">Page 2</a>
+      </li>
+      <li>
+          <a href="#">Page 3</a>
+      </li>
+  </ul>
+</li>
+
+<li>
+<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+<ul class="collapse list-unstyled" id="pageSubmenu">
+    <li>
+        <a href="#">Page 1</a>
+    </li>
+    <li>
+        <a href="#">Page 2</a>
+    </li>
+    <li>
+        <a href="#">Page 3</a>
+    </li>
+</ul>
+</li>
+
+
+
+            </ul>
+
+            
+        </nav>
+</aside>
+
+         <!-- Page Content  -->
+         
+         <div id="content"style="overflow-y:scroll;" class="row-offcanvas-left h-100" >
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+
+                  <button type="button" onclick="changemargin()" id="sidebarCollapse" class="btn btn-info">
+                      <i class="fas fa-align-left"></i>
+                     
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-align-justify"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">Page</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Page</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Page</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Page</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+       
+         
+<!--first column-->
+<div class="container-fluid maincontent">
+    <div class="row">
+<div class="col-12 text-left ">
+<h2 style="font-size: 32px!important;    margin-bottom: .5rem;
+font-family: inherit;
+font-weight: 500;
+line-height: 1.2;
+color: inherit;"> Welcome, Anny</h2>
+</div>
+<div class="col-xl-3 p-4 col-lg-6 col-md-6">
+    <div class="card text-left" >
+        <div class="cardheading black-text" >
+            <strong style="font-size:13px!important;">Sells Graph</strong>
+           <div class="arrow"style="background:#ff8306; "><i class="fas fa-arrow-up"></i> 3.2%</div>
+            <br>
+            <strong style="font-size: 32px;"> $8421</strong>
+        </div>
+        
+               <canvas id="myChart" ></canvas>
+    </div>   
+</div>
+
+<div class="col-xl-3 col-lg-6 col-md-6  p-4">
+    <div class="card text-left" >
+        <div class="cardheading black-text" >
+            <strong style="font-size:13px!important;">Sells Graph</strong>
+           <div class="arrow"style="background:black; "><i class="fas fa-arrow-up"></i> 3.2%</div>
+            <br>
+            <strong style="font-size: 32px;"> $8421</strong>
+        </div>
+        
+               <canvas id="myChart-2" width="400px"></canvas>
+    </div>   
+</div>
+<div class="col-xl-3   p-4 col-lg-6 col-md-6">
+    <div class="card text-left" >
+        <div class="cardheading black-text" >
+            <strong style="font-size:13px!important;">Sells Graph</strong>
+           <div class="arrow"style="background:#ff8306; "><i class="fas fa-arrow-up"></i> 3.2%</div>
+            <br>
+            <strong style="font-size: 32px;"> $8421</strong>
+        </div>
+        
+               <canvas id="myChart-3" width="400px"></canvas>
+    </div>   
+</div>
+<div class="col-xl-3   p-4 col-lg-6 col-md-6 col-sm-12">
+    <div class="card text-left" >
+        <div class="cardheading black-text" >
+            <strong style="font-size:13px!important;">Sells Graph</strong>
+           <div class="arrow"style="background:black; "><i class="fas fa-arrow-up"></i> 3.2%</div>
+            <br>
+            <strong style="font-size: 32px;"> $8421</strong>
+        </div>
+        
+               <canvas id="myChart-4" width="400px"></canvas>
+    </div>   
+</div>
+
+
+
+
+
+
+    </div>
+
+
+<!--first cclumn ends-->
+
+<!--second row statrs -->
+
+<div class="row">
+    <div class="col-lg-6 col-sm-12 mt-2 mb-2">
+        <div class="card p-4 coli progress-label ">
+
+<div class="head-1 justify-content-between p-2"style="display:flex;">
+    <h6>Rescent Requested Orders</h6>
+    
+<button style="font-size:20px;"class="btn button-1 text-white">View All</button>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        
+        <th style="width: 50%;" scope="col">Food Item</th>
+        <th scope="col">Price</th>
+        <th scope="col">Product id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        
+        <td><span><img style="width:29px;height:29px;margin-right:5px;" src="images/pizza.jpg"></span>Pizza</td>
+        <td>$19.99</td>
+        <td>#67890</td>
+      </tr>
+      <tr>
+       
+        <td><span><img style="width:29px;height:29px;margin-right:5px;" src="images/french-fries.jpg"></span>French Fries</td>
+        <td>$16.99</td>
+        <td>67891</td>
+      </tr>
+      <tr>
+        
+        <td><span><img style="width:29px;height:29px;margin-right:5px;" src="images/cereals.jpg"></span>Multi hot grain meal</td>
+        <td>$25.22</td>
+        <td>67892</td>
+      </tr>
+      <tr>
+
+        <td><span><img style="width:29px;height:29px;margin-right:5px;" src="images/egg-sandwich.jpg"></span>Fried Egg Sandwich</td>
+        <td>$45.22</td>
+        <td>67893</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+</div>
+
+<!--second ends -->
+
+
+<!--orders range-->
+
+
+
+
+
+
+
+<div class="col-xl-6 col-md-12 mt-2 mb-2">
+    <div class="card p-4 ">
+
+        <div class="head-1 justify-content-between p-2"style="display:flex;">
+    <h6>Monthly Revenue</h6>
+    <select class="form-control new" style="width:50%" id="exampleSelect">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March </option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="1">June</option>
+        <option value="2">July</option>
+        <option value="3">August</option>
+        <option value="4">September</option>
+        <option value="5">October</option>
+        <option value="4">November</option>
+        <option value="5">December</option>
+      </select>
+    
+
+</div>
+<div class="pro-bar ">
+    <div class="mb-2 "><span class="progress-label "> Week 1 </span>
+    <div class="progress">  
+      <div class="progress-bar " role="progressbar" style="width: 25%; background:#ff8306" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+    </div></div>
+
+    <div class="mb-3 mt-3" >
+
+    <span class="progress-label "> Week 2 </span>
+    <div class="progress">
+      <div class="progress-bar " role="progressbar" style="width: 50%;background:#ff8306" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+    </div>
+    </div>
+
+    <div class="mt-3 mb-3">
+
+    <span class="progress-label"> Week 3 </span>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 75%;background:#ff8306" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+    </div></div>
+    <div class="mt-3 mb-3">
+    <span class="progress-label"> Week 4 </span>
+    <div class="progress">
+      <div class="progress-bar " role="progressbar" style="width: 40%;background:#ff8306" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+    </div>
+    </div>
+  </div>
+
+
+
+    </div>
+</div>
+
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-12 ">
+        <div class="card p-4 coli progress-label">
+
+<div class="head-1 justify-content-between p-2"style="display:flex;">
+    <h6>Trending Orders</h6>
+    
+
+</div>
+
+    <div class="row mt-2">
+
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 mb-2">
+        <div class="card no-margin">
+          <div class="ms-card-img">
+            <img src="images/food-5.jpg" style="width:100%;" alt="card_img">
+          </div>
+          <div class="ms-card-body">
+            <div class=" pr-3 pl-3 pt-3 pb-0">
+              <h6>Meat Stew</h6>
+              <span class="green-text"><strong>$25.00</strong></span>
+            </div>
+
+            <div class="ms-card-heading-title p-2">
+              <p style="float: left;">Orders <span class="red-text">15</span></p>
+              <p style="float: right;">Income <span class="red-text">$175</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 mb-2">
+        <div class="card no-margin">
+          <div class="ms-card-img">
+            <img src="images/food-2.jpg" style="width:100%;"alt="card_img">
+          </div>
+          <div class="ms-card-body">
+            <div class=" pr-3 pl-3 pt-3 pb-0">
+              <h6 class="">Pancake</h6>
+              <span class="green-text " ><strong>$50.00</strong></span>
+            </div>
+
+            <div class="card-heading-title p-2">
+              <p style="float: left;" class="" >Orders <span class="red-text">75</span></p>
+              <p style="float: right;"class="">Income <span class="red-text">$275</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 mb-2">
+        <div class="card no-margin">
+          <div class="card-img">
+            <img src="images/food-4.jpg"style="width:100%;" alt="card_img">
+          </div>
+          <div class="ms-card-body">
+            <div class=" pr-3 pl-3 pt-3 pb-0">
+              <h6>Burger</h6>
+              <span class="green-text "><strong>$45.00</strong></span>
+            </div>
+
+            <div class="ms-card-heading-title p-2">
+              <p style="float: left;">Orders <span class="red-text">85</span></p>
+              <p style="float: right;">Income <span class="red-text">$575</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 mb-2">
+        <div class="card no-margin">
+          <div class="ms-card-img">
+            <img src="images/food-3.jpg"style="width:100%;" alt="card_img">
+          </div>
+          <div class="ms-card-body">
+            <div class=" pr-3 pl-3 pt-3 pb-0">
+              <h6>Saled</h6>
+              <span class="green-text "><strong>$85.00</strong></span>
+            </div>
+            <div class="ms-card-heading-title p-2">
+              <p style="float: left;">Orders <span class="red-text">175</span></p>
+              <p style="float: right;">Income <span class="red-text">$775</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div>
+
+
+</div>
+
+
+        </div>
+    </div>
+
+
+<div class="row mt-2 mb-2">
+  <div class="col-lg-6 col-sm-12 mt-2 mb-2">
+<div class="card p-2">
+  <div class="head-1  mt-3 mb-3 p-2"style="display:flex;text-align:center;">
+    <h6>Order Timimng Charts</h6>
+    
+</div>
+
+
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  <div id="chartdiv"></div>
+  
+</div>
+</div>
+
+
+
+
+
+
+  
+   
+      
+          
+   <div class="col-lg-6 col-sm-12 mt-2 mb-2">
+    <section id="tabs" class="project-tab">
+<div class="card">
+  <div class="head-1  mt-3 mb-3 p-2"style="display:flex;text-align:center;">
+    <h6>Favourite Charts</h6>
+    
+
+</div>
+                  <nav>
+                      <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                         <a class="nav-item nav-link active" id="Mon-tab" data-toggle="tab" href="#Mon" role="tab" aria-controls="Mon" aria-selected="true">Mon</a>
+                          <a class="nav-item nav-link" id="Tue-tab" data-toggle="tab" href="#Tue" role="tab" aria-controls="Tue" aria-selected="false">Tue</a>
+                          <a class="nav-item nav-link" id="wed-tab" data-toggle="tab" href="#wed" role="tab" aria-controls="wed" aria-selected="false">Wed</a>
+                          <a class="nav-item nav-link" id="Thr-tab" data-toggle="tab" href="#thr" role="tab" aria-controls="thr" aria-selected="false">Thr</a>
+                          <a class="nav-item nav-link" id="fri-tab" data-toggle="tab" href="#fri" role="tab" aria-controls="fri" aria-selected="false">fri</a>
+                         
+                      
+                        </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="Mon" role="tabpanel" aria-labelledby="Mon-tab">
+                          <table class="table" cellspacing="0">
+                              <thead>
+                                  <tr>
+                                      <th>Restaurant name</th>
+                                      <th>Qty</th>
+                                      <th>Orders</th>
+                                      <th>Profit</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td><a href="#">Monday</a></td>
+                                      <td>8528</td>
+                                      <td class="green-text-1">+17.8%</td>
+                                      <td>10%</td>
+                                  </tr>
+                                  <tr>
+                                      <td><a href="#">Food Lounge</a></td>
+                                      <td>7769</td>
+                                      <td class="red-text">-8.5%</td>
+                                      <td>7.65%</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Hunger House</a></td>
+                                    <td>8528</td>
+                                    <td class="green-text-1">+17.8%</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Food Lounge</a></td>
+                                    <td>7769</td>
+                                    <td class="red-text">-8.5%</td>
+                                    <td>7.65%</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Hunger House</a></td>
+                                  <td>8528</td>
+                                  <td class="green-text-1">+17.8%</td>
+                                  <td>10%</td>
+                              </tr>
+                              <tr>
+                                  <td><a href="#">Food Lounge</a></td>
+                                  <td>7769</td>
+                                  <td class="red-text">-8.5%</td>
+                                  <td>7.65%</td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+
+
+                      <div class="tab-pane fade show " id="Tue" role="tabpanel" aria-labelledby="Tue-tab">
+                        <table class="table" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Restaurant name</th>
+                                    <th>Qty</th>
+                                    <th>Orders</th>
+                                    <th>Profit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">Tuesday</a></td>
+                                    <td>8528</td>
+                                    <td class="green-text-1">+17.8%</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Food Lounge</a></td>
+                                    <td>7769</td>
+                                    <td class="red-text">-8.5%</td>
+                                    <td>7.65%</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Hunger House</a></td>
+                                  <td>8528</td>
+                                  <td class="green-text-1">+17.8%</td>
+                                  <td>10%</td>
+                              </tr>
+                              <tr>
+                                  <td><a href="#">Food Lounge</a></td>
+                                  <td>7769</td>
+                                  <td class="red-text">-8.5%</td>
+                                  <td>7.65%</td>
+                              </tr>
+                              <tr>
+                                <td><a href="#">Hunger House</a></td>
+                                <td>8528</td>
+                                <td class="green-text-1">+17.8%</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Food Lounge</a></td>
+                                <td>7769</td>
+                                <td class="red-text">-8.5%</td>
+                                <td>7.65%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>                  
+                    
+                    
+                    <div class="tab-pane fade show" id="wed" role="tabpanel" aria-labelledby="wed-tab">
+                      <table class="table" cellspacing="0">
+                          <thead>
+                              <tr>
+                                  <th>Restaurant name</th>
+                                  <th>Qty</th>
+                                  <th>Orders</th>
+                                  <th>Profit</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td><a href="#">Wednesday</a></td>
+                                  <td>8528</td>
+                                  <td class="green-text-1">+17.8%</td>
+                                  <td>10%</td>
+                              </tr>
+                              <tr>
+                                  <td><a href="#">Food Lounge</a></td>
+                                  <td>7769</td>
+                                  <td class="red-text">-8.5%</td>
+                                  <td>7.65%</td>
+                              </tr>
+                              <tr>
+                                <td><a href="#">Hunger House</a></td>
+                                <td>8528</td>
+                                <td class="green-text-1">+17.8%</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Food Lounge</a></td>
+                                <td>7769</td>
+                                <td class="red-text">-8.5%</td>
+                                <td>7.65%</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Hunger House</a></td>
+                              <td>8528</td>
+                              <td class="green-text-1">+17.8%</td>
+                              <td>10%</td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Food Lounge</a></td>
+                              <td>7769</td>
+                              <td class="red-text">-8.5%</td>
+                              <td>7.65%</td>
+                          </tr>
+                          </tbody>
+                      </table>
+                  </div>
+
+                  <div class="tab-pane fade show " id="thr" role="tabpanel" aria-labelledby="thr-tab">
+                    <table class="table" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Restaurant name</th>
+                                <th>Qty</th>
+                                <th>Orders</th>
+                                <th>Profit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Thursday</a></td>
+                                <td>8528</td>
+                                <td class="green-text-1">+17.8%</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Food Lounge</a></td>
+                                <td>7769</td>
+                                <td class="red-text">-8.5%</td>
+                                <td>7.65%</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Hunger House</a></td>
+                              <td>8528</td>
+                              <td class="green-text-1">+17.8%</td>
+                              <td>10%</td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Food Lounge</a></td>
+                              <td>7769</td>
+                              <td class="red-text">-8.5%</td>
+                              <td>7.65%</td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Hunger House</a></td>
+                            <td>8528</td>
+                            <td class="green-text-1">+17.8%</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Food Lounge</a></td>
+                            <td>7769</td>
+                            <td class="red-text">-8.5%</td>
+                            <td>7.65%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tab-pane fade show " id="fri" role="tabpanel" aria-labelledby="fri-tab">
+                  <table class="table" cellspacing="0">
+                      <thead>
+                          <tr>
+                              <th>Restaurant name</th>
+                              <th>Qty</th>
+                              <th>Orders</th>
+                              <th>Profit</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td><a href="#">Friday</a></td>
+                              <td>8528</td>
+                              <td class="green-text-1">+17.8%</td>
+                              <td>10%</td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Food Lounge</a></td>
+                              <td>7769</td>
+                              <td class="red-text">-8.5%</td>
+                              <td>7.65%</td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Hunger House</a></td>
+                            <td>8528</td>
+                            <td class="green-text-1">+17.8%</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Food Lounge</a></td>
+                            <td>7769</td>
+                            <td class="red-text">-8.5%</td>
+                            <td>7.65%</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">Hunger House</a></td>
+                          <td>8528</td>
+                          <td class="green-text-1">+17.8%</td>
+                          <td>10%</td>
+                      </tr>
+                      <tr>
+                          <td><a href="#">Food Lounge</a></td>
+                          <td>7769</td>
+                          <td class="red-text">-8.5%</td>
+                          <td>7.65%</td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>
+
+
+                   
+                  </div>
+              </div>
+            </div>
+          
+      
+  </section>
+  
+
+</div>
+<!-- Recently paced orders table-->
+<div class="row">
+<div class="col-12">
+  <div class="card p-2">
+    <div class="head p-4">
+      <h6 style="font-weight: 500!important;">Recently Placed Orders</h6>
+    </div>
+    <div class="">
+      <div class="table-responsive">
+        <table class="table table-hover thead-primary" style=" font-family: 'Roboto', sans-serif!important;">
+          <thead style="background-color: #ff8306;color: #fff;font-weight:200!important;font-family: 'Roboto', sans-serif!important;">
+            <tr style="background-color: #ff8306;color: #fff;font-weight:200!important;font-family: 'Roboto', sans-serif!important;">
+              <th  scope="col">Order ID</th>
+              <th scope="col">Order Name</th>
+              <th scope="col">Customer Name</th>
+              <th scope="col">Location</th>
+              <th scope="col">Order Status</th>
+              <th scope="col">Delivered Time</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody style="font-size: 16px;">
+            <tr>
+              <th scope="row">1</th>
+              <td>French Fries</td>
+              <td>Jhon Leo</td>
+              <td>New Town</td>
+              <td><span class="badge"style="background:#ff8306;">Pending</span>
+              </td>
+              <td>10:05</td>
+              <td>$10</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Mango Pie</td>
+              <td>Kristien</td>
+              <td>Old Town</td>
+              <td><span class="badge badge-dark">Cancelled</span>
+              </td>
+              <td>14:05</td>
+              <td>$9</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>FrieD Egg Sandwich</td>
+              <td>Jack Suit</td>
+              <td>Oxford Street</td>
+              <td><span class="badge badge-success">Delivered</span>
+              </td>
+              <td>12:05</td>
+              <td>$19</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Lemon Yogurt Parfait</td>
+              <td>Alesdro Guitto</td>
+              <td>Church hill</td>
+              <td><span class="badge badge-success">Delivered</span>
+              </td>
+              <td>12:05</td>
+              <td>$18</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Spicy Grill Sandwich</td>
+              <td>Jacob Sahwny</td>
+              <td>palace Road</td>
+              <td><span class="badge badge-success">Delivered</span>
+              </td>
+              <td>12:05</td>
+              <td>$21</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Chicken Sandwich</td>
+              <td>Peter Gill</td>
+              <td>Street 21</td>
+              <td><span style="background:#ff8306;" class="badge ">Pending</span>
+              </td>
+              <td>12:05</td>
+              <td>$15</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--recently placed end-->
+
+<!--New Restaurants Listing-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--new listing-->
+
+<div class="row"style="margin-left:2px;margin-right:2px;">
+
+  <div class="col-12 card"> <div class=" m-3">
+    <h5>NEW RESTURANT LISTINGS</h5>
+  </div>
+</div>
+</div>
+    
+    
+
+
+
+<div class="container-fluid ml-2 mr- card  "style="margin-right:3px;">
+  <div class="row justify-content-center">
+      <div class=" col-lg-3 col-md-6  card coli p-2 ml-lg-3  mr-lg-3 mt-2 mb-2">
+    
+        <div class="">
+          <img class="img-profile"  src="images/customer-1.jpg"> 
+          <h6 style="margin:3px!important;" >Hunger House</h6>
+          <p style="font-size: 16px;margin:3px!important;" >30 seconds ago</p>
+        <div>
+        <button type="button" class="threedot-1"id="threedot-01"><i class="fas fa-ellipsis-v"></i></button>
+        <div id="menudot-1"  class="menudot heading">
+          <ul class="list-unstyled ">
+            <li>Sales</li>
+            <li>Details</li>
+            <li>Remove</li>
+          </ul>
+        </div>
+        </div>
+        
+          
+        
+        <div style="z-index: -1!important;" class="rating">
+          <i class="fa fa-star star " ></i>
+          <i class="fa fa-star star" ></i>
+          <i class="fa fa-star star" ></i>
+          <i class="fa fa-star star" ></i> 
+          <i class="fa fa-star star-r" id="star-r" onclick="document.getElementById('star-r').style.color = 'gold'" ></i>
+        </div>    
+        
+          </div>
+          
+        <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio consequatur sapiente itaque, fugiat 
+           
+            repellendus! Repudiandae dolore inventore nisi voluptates soluta necessitatibus?</p>
+            <img src="images/food-1.jpg" width="100%" height="187px">
+           <center> <div class="justify-content-center m-3">
+            <span class="m-3"><i class="fas fa-heart"></i>
+              782</span>
+             <span class="m-3"> <i class="fas fa-grip-lines-vertical "></i></span>
+             <span class="m-3"> <i class="fas fa-comment"></i>555</span>
+            </div>
+            </center>
+        </div>
+
+      </div>
+      <!-- /.col-sm-4 -->
+      <div class="col-lg-3 col-md-6 card coli p-2 ml-lg-3  mr-lg-3 mt-2 mb-2">
+  
+
+        <div class="">
+          <img class="img-profile"  src="images/customer-1.jpg"> 
+          <h6 style="margin:3px!important;" >Hunger House</h6>
+          <p style="font-size: 16px;margin:3px!important;" >30 seconds ago</p>
+        <div>
+        <button type="button" class="threedot-1" id="threedot-2"><i class="fas fa-ellipsis-v"></i></button>
+        <div id="menudot-2" class="heading menudot">
+          <ul class="list-unstyled ">
+            <li>Sales</li>
+            <li>Details</li>
+            <li>Remove</li>
+          </ul>
+        </div>
+        </div>
+        
+          
+        
+        <div style="z-index: -1!important;" class="rating">
+          <i class="fa fa-star star " ></i>
+          <i class="fa fa-star star" ></i>
+          <i class="fa fa-star star" ></i>
+          <i class="fa fa-star star" ></i> 
+          <i class="fa fa-star star-r" id="star-r2" onclick="document.getElementById('star-r2').style.color = 'gold'" ></i>
+        </div>    
+        
+          </div>
+          
+        <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio consequatur sapiente itaque, fugiat 
+           
+            repellendus! Repudiandae dolore inventore nisi voluptates soluta necessitatibus?</p>
+            <img src="images/food-1.jpg" width="100%" height="187px">
+           <center> <div class="justify-content-center m-3">
+            <span class="m-3"><i class="fas fa-heart"></i>
+              782</span>
+             <span class="m-3"> <i class="fas fa-grip-lines-vertical "></i></span>
+             <span class="m-3"> <i class="fas fa-comment"></i>555</span>
+            </div>
+            </center>
+        </div>
+      </div>
+
+
+
+      <!-- /.col-sm-4 -->
+      <div class="col-md-6 col-lg-3 card coli p-2 ml-lg-3 mr-lg-3 mt-2 mb-2">
+    
+
+
+        <div class="">
+          <img class="img-profile"  src="images/customer-1.jpg"> 
+          <h6 style="margin:3px!important;" >Hunger House</h6>
+          <p style="font-size: 16px;margin:3px!important;" >30 seconds ago</p>
+        <div>
+        <button type="button" class="threedot-1"  id="threedot-3"><i class="fas fa-ellipsis-v"></i></button>
+        <div id="menudot-3" class="heading menudot">
+          <ul class="list-unstyled ">
+            <li>Sales</li>
+            <li>Details</li>
+            <li>Remove</li>
+          </ul>
+        </div>
+        </div>
+        
+          
+        
+        <div style="z-index: -1!important;" class="rating">
+          <i class="fa fa-star star " ></i>
+          <i class="fa fa-star star" ></i>
+          <i class="fa fa-star star" ></i>
+          <i class="fa fa-star star" ></i> 
+          <i class="fa fa-star star-r" id="star-r3" onclick="document.getElementById('star-r3').style.color = 'gold'" ></i>
+        </div>    
+        
+          </div>
+          
+        <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio consequatur sapiente itaque, fugiat 
+           
+            repellendus! Repudiandae dolore inventore nisi voluptates soluta necessitatibus?</p>
+            <img src="images/food-1.jpg" width="100%" height="187px">
+           <center> <div class="justify-content-center m-3">
+            <span class="m-3"><i class="fas fa-heart"></i>
+              782</span>
+             <span class="m-3"> <i class="fas fa-grip-lines-vertical "></i></span>
+             <span class="m-3"> <i class="fas fa-comment"></i>555</span>
+            </div>
+            </center>
+        </div>
+      </div>
+      <!-- /.col-sm-4 -->
+ </div>
+ <!-- /.row -->
+</div>
+<!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12 mt-2 mb-2">
+        <div class="card  coli progress-label ">
+
+<div class="head-1 justify-content-between p-2"style="display:flex;">
+    <h6 style="margin-top:30px;">RECENT SUPPORT TICKETS
+    </h6>
+    
+<button style="font-size:20px;"class="btn button-1 text-white">View All</button>
+</div>
+
+
+<div class="p-3 head-1 msg">
+  
+  <img class="img-profile"  src="images/customer-1.jpg">
+   
+  <h6 style="margin:3px!important;" >Hunger House</h6>
+  <span class="badge" style="float:right;margin:5px!important; font-size: 16px;color: #fff; background:green;">Open</span>
+  <div>
+    <i  class="fa fa-calendar" aria-hidden="true"></i>
+  <p style="font-size: 16px;margin:5px!important;display: inline;" >Feburary,24 2000</p>
+</div>
+<div class="p-3 mt-3 ml-4"> 
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum 
+  impedit quae facere, provident sint ipsa!</p>
+</div>
+<div class=" ml-4 mb-2 ">
+  <i class="fas fa-comment ml-3 mr-3"></i>
+  <i class="fas fa-paperclip ml-3 mr-3"></i>
+</div>
+
+  
+
+
+</div>
+<div class="p-3 head-1 msg">
+  
+  <img class="img-profile"  src="images/customer-1.jpg">
+   
+  <h6 style="margin:3px!important;" >Hunger House</h6>
+  <span class="badge" style="float:right;margin:5px!important; font-size: 16px;color: #fff; background:green;">Open</span>
+  <div>
+    <i  class="fa fa-calendar" aria-hidden="true"></i>
+  <p style="font-size: 16px;margin:5px!important;display: inline;" >Feburary,24 2000</p>
+</div>
+<div class="p-3 mt-3 ml-4"> 
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum 
+  impedit quae facere, provident sint ipsa!</p>
+</div>
+<div class=" ml-4 mb-2 ">
+  <i class="fas fa-comment ml-3 mr-3"></i>
+  <i class="fas fa-paperclip ml-3 mr-3"></i>
+</div>
+
+  
+
+
+</div>
+
+<div class="p-3 msg">
+  
+  <img class="img-profile"  src="images/customer-1.jpg">
+   
+  <h6 style="margin:3px!important;" >Hunger House</h6>
+  <span class="badge" style="float:right;margin:5px!important; font-size: 16px;color: #fff; background:crimson;">Close</span>
+  <div>
+    <i  class="fa fa-calendar" aria-hidden="true"></i>
+  <p style="font-size: 16px;margin:5px!important;display: inline;" >Feburary,24 2000</p>
+</div>
+<div class="p-3 mt-3 ml-4"> 
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum 
+  impedit quae facere, provident sint ipsa!</p>
+</div>
+<div class=" ml-4 mb-2 ">
+  <i class="fas fa-comment ml-3 mr-3"></i>
+  <i class="fas fa-paperclip ml-3 mr-3"></i>
+</div>
+
+  
+
+
+</div>
+
+
+
+  </div>
+
+
+
+</div>
+
+<div class="col-lg-6 col-sm-12 mt-2 mb-2">
+  <div class="card p-4 coli progress-label pt-2 pb-2 ">
+
+
+
+<div class="mb-2 head-1">
+  <div style="display: block;">
+  <img class="img-profile"  src="images/customer-1.jpg" ><i style="color:green;display:block;position: absolute;top:70px;margin: 3px;" class="fas fa-dot-circle"></i> 
+  </div>
+  <h6 style="margin:3px!important;" >Hunger House</h6>
+  <div style="float: right;">
+    <i class="fas fa-phone ml-1 mr-1 bgi "></i>
+  <i class="fas fa-video ml-1 mr-1 bgi"></i>
+  <i class="fas fa-user-circle ml-1 mr-1 bgi"></i>
+  </div>
+  
+  <p style="display:block; font-size: 16px;margin:3px!important;" >Active now</p>
+
+
+
+
+</div>
+<div class="pt-3">
+<div >
+  <img style="float: right;" class="img-profile" src="images/customer-1.jpg">
+<div  style="float: right;" class="chatmsg" > 
+  <span style="display: block; margin-right: 7px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+</div>
+</div>
+
+</div>
+
+<div class="pt-3">
+  <div >
+    <img style="float: left;" class="img-profile" src="images/customer-1.jpg">
+  <div  style="float: left;" class="chatreply" > 
+    <span style="display: block; margin-left: 7px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+  </div>
+  </div>
+ 
+  </div>
+
+  <div class="pt-3">
+    <div >
+      <img style="float: right;" class="img-profile" src="images/customer-1.jpg">
+    <div  style="float: right;" class="chatmsg" > 
+      <span style="display: block; margin-right: 7px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+    </div>
+    </div>
+   
+    </div>
+
+    <div class="pt-3">
+      <div >
+        <img style="float: left;" class="img-profile" src="images/customer-1.jpg">
+      <div  style="float: left;" class="chatreply" > 
+        <span style="display: block; margin-left: 7px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+      </div>
+      </div>
+     
+      </div>
+      <div class="pt-3">
+        <div >
+          <img style="float: right;" class="img-profile" src="images/customer-1.jpg">
+        <div  style="float: right;" class="chatmsg" > 
+          <span style="display: block; margin-right: 7px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+        </div>
+        </div>
+       
+        </div>
+    
+        <div class="pt-3">
+          <div >
+            <img style="float: left;" class="img-profile" src="images/customer-1.jpg">
+          <div  style="float: left;" class="chatreply" > 
+            <span style="display: block; margin-left: 7px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+          </div>
+          </div>
+         
+          </div>
+          <div class="pt-3">
+            <div >
+              <img style="float: right;" class="img-profile" src="images/customer-1.jpg">
+            <div  style="float: right;" class="chatmsg" > 
+              <span style="display: block; margin-right: 7px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+            </div>
+            </div>
+           
+            </div>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+<!--orders range ends-->
+
+
+
+
+
+ 
+
+ 
+
+
+ <!-- jQuery CDN - Slim version (=without AJAX) -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <!-- Popper.JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+ <!-- Bootstrap JS -->
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <script src="main.js" ></script>
+
+  
+</body>
+</html>
